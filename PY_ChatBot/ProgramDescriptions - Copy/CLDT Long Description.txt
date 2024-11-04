@@ -1,0 +1,20 @@
+Cloud refers to the software and services that run on the Internet, instead of locally on your computer. Today, the very websites
+you visit, the photos you take on your phone, the data you access to register for courses or to buy those household items online
+is likely stored in “the Cloud.” No, the Cloud is not a group of fluffy cumulous shapes in the sky.
+
+The Cloud is composed of a network of servers that compose the internet. Fortune 500 companies across the United States and
+globally are investing billions of dollars to adopt Cloud platforms as part of their digital transformation. In fact, Gartner, the world’s
+leading research and advisory company, forecasts that global spend for Cloud in 2021 will exceed $308 billion dollars. This
+growth is eclipsed by the lack of Cloud talent in industry.  The Ivy Tech Cloud Technologies program is dedicated to provide
+students with the skills required to meet the growing demand for Cloud talent. Students will develop foundational skills in system
+administration that will translate to a wide variety of business scenarios.
+
+Our graduates are skilled in developing and maintaining multi-user computer systems for business, from small organizations to
+large enterprises. Students will learn how to unpack complex problems and systems and learn how modern organizations are
+dealing with ever changing infrastructure. Students will learn about popular Cloud platforms such as Amazon Web Services
+(AWS) and Microsoft Azure.
+
+Additionally, as a Cloud Technologies major you have the opportunity to earn the CompTIA A+, Security+, and Network+, A Cloud
+Practitioner, and AWS Solutions Architect certifications. These certifications are currency to help you land a great job in Cloud
+while being exposed to groundbreaking technologies, attacking the issues facing Fortune 500 companies and small businesses
+alike.

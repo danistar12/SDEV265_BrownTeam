@@ -1,0 +1,11 @@
+Ivy Tech Community College created the Center for Cyber Security to meet the demands for high-quality cyber security
+education and training. Through our nationally recognized center, Ivy Tech students receive the education and training they
+need for jobs that secure our community, state and nation’s computers, networks and critical infrastructure.
+
+The program will build the foundationto identify and fix computer security attacks. The material covered in the program is
+designed for students with, advanced computer or currently working in the computer industry. Cyber Security is a 
+degree that can be applied to many facets of the student’s life, from personal to work experiences. There is a growing need for
+stronger Cyber Security with the increasing media attention.'CHAR(13), CHAR(10),
+
+The quality of Ivy Tech’s programs is recognized by several governmental entities, attesting to the quality of the curriculum,
+instruction and administrative support.

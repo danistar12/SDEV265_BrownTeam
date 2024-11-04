@@ -1,0 +1,10 @@
+Data Analytics helps people and organizations draw conclusions from data sources. Data Analysts review, manage, analyze data,
+visualize data to look for insights to pressing questions or trends. Employment within the Data Analytics field continues to grow
+as employers look to make data driven decisions and must navigate data trends.
+
+The Data Analytics program prepares students for a growing field which requires skills in organization, storage, integration,
+retrieval and analysis of data. Students are trained in database design, systems management, troubleshooting, and business
+reporting. Students are introduced to the significant tasks required of data analysts. Data structures and the implementation of
+data security and integrity measures are learned as key components. Students will apply business rules to analyze data, and
+effectively communicate trends that can be implemented for the business. Businesses need individuals to visualize the wealth of
+data available in order to make data driven decisions in order to stay on top of market demands.
