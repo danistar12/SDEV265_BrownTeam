@@ -31,7 +31,7 @@ def get_courses():
 def get_course_details(course_code):
     conn = connect_db()
     cursor = conn.cursor()
-    cursor.execute("SELECT name, description, syllabus, prerequisites, registration_details FROM courses WHERE code = %s", (course_code,))
+    cursor.execute("SELECT name, description, prerequisites FROM courses WHERE code = %s", (course_code,))
     course_details = cursor.fetchone()
     conn.close()
     return course_details
@@ -44,6 +44,15 @@ def get_faculty():
     faculty = cursor.fetchall()
     conn.close()
     return faculty
+
+# Fetch degree information from the database
+def get_degree_info():
+    conn = connect_db()
+    cursor = conn.cursor()
+    cursor.execute("SELECT degreecode, shortdescription, longdescription FROM degrees")
+    degrees = cursor.fetchall()
+    conn.close()
+    return degrees
 
 # Analyze user intent
 def analyze_intent(user_input):
