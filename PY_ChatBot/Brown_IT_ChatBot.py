@@ -78,9 +78,9 @@ pairs = [
     [r"What's the campus life like\??", ["Campus life includes student organizations, events, leadership training, and recreational activities. You can find more information here: https://www.ivytech.edu/campus-life/"]],
     [r"How do I get technical support\??", ["For technical support, you can contact our IT help desk or visit: https://www.ivytech.edu/technical-support/"]],
     [r"What are the academic policies\??", ["Academic policies, including grading policies, academic probation, and graduation requirements, can be found in the student handbook available here: https://www.ivytech.edu/academic-policies/"]],
-    [r"Tell me about health and wellness services", ["\nWe offer various health and wellness services including mental health support, counseling, and wellness programs. More details are available here: https://www.ivytech.edu/health-wellness/"]],
-    [r"What career services are available\??", ["\nOur career services include job placement assistance, resume and interview workshops, and career fairs. Visit our career services page for more information: https://www.ivytech.edu/career-services/"]],
-    [r"How can I transfer credits\??|Can I transfer my credits\??", ["\nYou can transfer credits by following the transfer pathways and articulation agreements available here: https://www.ivytech.edu/transfer-credits/"]]
+    [r"Tell me about health and wellness services", ["We offer various health and wellness services including mental health support, counseling, and wellness programs. More details are available here: https://www.ivytech.edu/health-wellness/"]],
+    [r"What career services are available\??", ["Our career services include job placement assistance, resume and interview workshops, and career fairs. Visit our career services page for more information: https://www.ivytech.edu/career-services/"]],
+    [r"How can I transfer credits\??|Can I transfer my credits\??", ["You can transfer credits by following the transfer pathways and articulation agreements available here: https://www.ivytech.edu/transfer-credits/"]]
 ]
 
 # Create chatbot
@@ -138,12 +138,12 @@ class SchoolOfITChatbot:
             return
         #you: format
         self.text_area.config(state='normal')
-        self.text_area.insert(tk.END, f"You: {user_input}\n\n")
+        self.text_area.insert(tk.END, f"YOU: {user_input}\n")
         self.text_area.config(state='disabled')
         #Bot: format
         response = self.chatbot.respond(user_input)
         self.text_area.config(state='normal')
-        self.text_area.insert(tk.END, "Bot: ", "bold") 
+        self.text_area.insert(tk.END, "BOT: ", "bold") 
         self.text_area.tag_configure("bold", font=("Helvetica", 10, "bold"))
 
         #search for links
