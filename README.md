@@ -1,10 +1,26 @@
 # SDEV265_BrownTeam
-This is a shared repository for the brown team.
+## Installation Instructions
 
-We will be making two seperate but parallel attempts toward implementing 
-the School of Infomation Technology chatbot. We first plan to use and build upon
-files provided by the professor. This will include using python and its built in modules
-in addition to sql queries. 
+### Prerequisites
+Before proceeding with the installation, ensure you have the following installed on your system:
+- **Python** (version 3.6 or above)
+- **pip** (Python package installer)
+- **MySQL Server** (Ensure the MySQL server is running)
 
-The second avenue we plan to build would be implementing an advanced API 
-...
+### Step 1: Clone the Repository
+Clone the project repository from GitHub to your local machine. Open your terminal or command prompt and run:
+git clone https://github.com/danistar12/SDEV265_BrownTeam.git
+cd SDEV265_BrownTeam/PY_ChatBot
+
+### Step 2: Set Up a Virtual Environment (Optional but Recommended)
+python -m venv venv
+*on windows*
+venv\Scripts\activate
+*on MacOS/Linux:*
+source venv/bin/activate
+
+### Step 3: Install Dependencies
+pip install -r requirements.txt
+
+### Step 4: Run Brown_IT_ChatBot.py
+python Brown_IT_ChatBot.by
