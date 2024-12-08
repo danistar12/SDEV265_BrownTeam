@@ -38,6 +38,11 @@ async function messageHandler() {
   // Clear the chat input field
   chatInput.value = "";
 
+  // Add "I'm thinking..." text to the chat box
+  const thinkingMessage = document.createElement("p");
+  thinkingMessage.textContent = "Bot: I'm thinking...";
+  chatBox.appendChild(thinkingMessage);
+
   try {
     // Generate a response from the model using the user's message
     const response = await model.generateContent(userMessage);
@@ -48,14 +53,14 @@ async function messageHandler() {
     // Format the response text using marked library for HTML rendering
     const formattedResponse = marked.parse(responseText);
 
-    // Add the bot's formatted response to the chat box
-    chatBox.innerHTML += `<p>Bot: ${formattedResponse}</p>`;
+    // Replace "I'm thinking..." text with the bot's formatted response
+    thinkingMessage.innerHTML = `Bot: ${formattedResponse}`;
 
     // Scroll the chat box to the bottom to show the latest message
     chatBox.scrollTop = chatBox.scrollHeight;
   } catch (error) {
     // Handle errors by displaying a generic error message in the chat box
-    chatBox.innerHTML += "<p>Bot: Sorry, I encountered an error.</p>";
+    thinkingMessage.innerHTML = "Bot: Sorry, I encountered an error.";
     console.error("API Error:", error); // Log the error for debugging
   }
 }
