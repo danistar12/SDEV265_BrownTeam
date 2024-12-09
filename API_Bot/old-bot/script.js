@@ -4,7 +4,7 @@ const chatInput = document.getElementById("chat-input");
 const sendButton = document.getElementById("send-button");
 
 // Import the GoogleGenerativeAI class from the generative-ai library
-import { GoogleGenerativeAI } from "./node_modules/@google/generative-ai/dist/index.mjs";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // Create a new GoogleGenerativeAI instance with the API key
 const genAI = new GoogleGenerativeAI("AIzaSyA0evjY-qQ4IoXLkDMZVUUJRzXLLt9KBPw");
