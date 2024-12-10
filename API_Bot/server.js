@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
+const { marked } = require("marked");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const app = express();
@@ -65,7 +66,8 @@ app.post("/api/chat", async (req, res) => {
     history: [],
   });
   const result = await chatSession.sendMessage(message);
-  res.json({ response: result.response.text() });
+  const formattedResponse = marked(result.response.text());
+  res.json({ response: formattedResponse });
 });
 
 app.listen(port, () => {
