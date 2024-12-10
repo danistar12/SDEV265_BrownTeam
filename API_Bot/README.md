@@ -37,9 +37,9 @@ This is a NodeJS AI chatbot using Google Gemini 1.5 Pro to assist with informati
    ```
 3. **Setup your Google Gemini API key:**:
 
-   1. Create a new file named `.env` in the `API_Bot` directory.
-   2. Go to the [Google AI Studio](https://aistudio.google.com/app/apikey) page and create your API Key.
-   3. Add the following line to the `.env` file, replacing `YOUR_API_KEY` with your Google Gemini API key.
+   - Create a new file named `.env` in the `API_Bot` directory.
+   - Go to the [Google AI Studio](https://aistudio.google.com/app/apikey) page and create your API Key.
+   - Add the following line to the `.env` file, replacing `YOUR_API_KEY` with your Google Gemini API key.
 
    ```
    GEMINI_API_KEY=YOUR_API_KEY
