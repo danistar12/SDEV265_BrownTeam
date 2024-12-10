@@ -1,0 +1,24 @@
+{
+  "name": "ivytech-ai-chatbot",
+  "version": "1.0.0",
+  "description": "AI Virtual Assistant for Ivy Tech Community College IT Department",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danistar12/SDEV265_BrownTeam.git"
+  },
+  "author": "Divya Rasania, Syntiche Tshimanga, Danielle Lloyd, Ashley Torres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danistar12/SDEV265_BrownTeam/issues"
+  },
+  "homepage": "https://github.com/danistar12/SDEV265_BrownTeam",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
