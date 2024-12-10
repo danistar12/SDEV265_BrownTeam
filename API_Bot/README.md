@@ -5,11 +5,11 @@ This is a NodeJS AI chatbot using Google Gemini 1.5 Pro to assist with informati
 ## Navigation
 
 - [Home](#ivy-tech-ai-chatbot)
+- [Authors](#authors)
 - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Project Structure](#project-structure)
-- [Authors](#authors)
 
 ## Authors
 
