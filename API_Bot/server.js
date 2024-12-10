@@ -1,15 +1,15 @@
-require("dotenv").config();
-const express = require("express");
-const path = require("path");
-const bodyParser = require("body-parser");
-const { marked } = require("marked");
-const { GoogleGenerativeAI } = require("@google/generative-ai");
+require("dotenv").config(); // Load environment variables from .env file
+const express = require("express"); // Import Express framework
+const path = require("path"); // Import path module for handling file paths
+const bodyParser = require("body-parser"); // Import body-parser for parsing request bodies
+const { marked } = require("marked"); // Import marked for converting Markdown to HTML
+const { GoogleGenerativeAI } = require("@google/generative-ai"); // Import Google Generative AI
 
-const app = express();
-const port = process.env.PORT || 3000;
+const app = express(); // Create an Express application
+const port = process.env.PORT || 3000; // Set the port from environment variable or default to 3000
 
-const apiKey = process.env.GEMINI_API_KEY;
-const genAI = new GoogleGenerativeAI(apiKey);
+const apiKey = process.env.GEMINI_API_KEY; // Get the API key from environment variables
+const genAI = new GoogleGenerativeAI(apiKey); // Initialize Google Generative AI with the API key
 
 const model = genAI.getGenerativeModel({
   model: "gemini-1.5-pro",
@@ -52,24 +52,24 @@ const generationConfig = {
   responseMimeType: "text/plain",
 };
 
-app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, "public")));
+app.use(bodyParser.json()); // Use body-parser middleware to parse JSON request bodies
+app.use(express.static(path.join(__dirname, "public"))); // Serve static files from the "public" directory
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "ui.html"));
+  res.sendFile(path.join(__dirname, "public", "ui.html")); // Serve the UI HTML file
 });
 
 app.post("/api/chat", async (req, res) => {
-  const { message } = req.body;
+  const { message } = req.body; // Get the message from the request body
   const chatSession = model.startChat({
     generationConfig,
     history: [],
   });
-  const result = await chatSession.sendMessage(message);
-  const formattedResponse = marked(result.response.text());
-  res.json({ response: formattedResponse });
+  const result = await chatSession.sendMessage(message); // Send the message to the AI model
+  const formattedResponse = marked(result.response.text()); // Convert the response to HTML
+  res.json({ response: formattedResponse }); // Send the response back to the client
 });
 
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  console.log(`Server is running on http://localhost:${port}`); // Start the server and log the port
 });
